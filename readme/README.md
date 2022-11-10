@@ -5,7 +5,7 @@ github reposetory:
 
 figma prototype: https://www.figma.com/proto/VP87lebSOdSqFsa72TVvn8/Rainyday?page-id=0%3A1&node-id=3%3A2&starting-point-node-id=3%3A2&scaling=scale-down
 
-Netlify:
+Netlify: rainydz.netlify.app
 
 ## Description
 
