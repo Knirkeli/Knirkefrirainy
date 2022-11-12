@@ -103,7 +103,6 @@ footer {
     
 }
    
-
 footer a {
     height: 100%;
     width: auto;
@@ -184,19 +183,47 @@ footer p {
 
 /*Return*/
 
+.return {
+    font-family: inter, Verdana;
+    display: block;
+    padding-left: 10%; 
+    background-color: #d9d9d9;
+}
+
+.return_form {
+   
+    
+}
+
 textarea {
     display: block;
     min-width: 400px;
     min-height: 400px;
     width: fit-content;
     text-align: top;
-}
+   }
 
 /*contact*/
 
+.contact_page {
+    display: grid; 
+    grid-template-columns: 1;
+    justify-content: center;
+}
+
+.contact_elements {
+    display: inline-grid;
+    max-width: 1000px;
+    min-width: 1000px;
+    min-height: 20%;
+    background-color: #d9d9d9;
+    text-align: center;
+    border-radius: 20px;
+}
 
 
-/*season pages*/
+
+/*season pages husk å legge rett html på alle*/
 
 .jackets_sale {
     display: grid;
