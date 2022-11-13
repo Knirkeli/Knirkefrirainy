@@ -68,6 +68,7 @@ a {
     border-radius: 20px;
     max-width: 555px;
     margin: 50px auto;
+    position:relative
     }
 
 .search {
@@ -86,9 +87,17 @@ a {
 .search_icon .fa-solid {
     background-color: none;
     position:relative;
-    left:20px;
-    top:-8px;
+
     z-index:999;
+    
+   }
+
+.search_icon {
+    position:absolute;
+    right: 0;
+    top: 10px;
+    border-style: none;
+    background-color: transparent;
 }
 p h1 h2 h3{
     font-family: inter, Verdana, Geneva, Tahoma, sans-serif;    
@@ -253,28 +262,24 @@ textarea {
 /*season pages husk å legge rett html på alle*/
 
 .jackets_sale {
-    display: inline-grid;
- 
+    display: grid; 
     padding-top: 20px;
     justify-content: center;
     align-items: center;
     height: 100%;
-    width: 20%;  
+    max-width: 750px;
     grid-template-columns: 2fr 2fr;
     grid-gap: 40px;
     font-family: inter, Verdana, Geneva, Tahoma, sans-serif;
     font-size: xx-large;
     background-color: #ffffff;
     color: #020202;
-    border-style: solid;
+    margin: 0 auto;
 }
 
 .product_link {
-    border-style: solid;
     
-    align-self: center;
-    
-
+    align-self: center;   
 }
 
 .product_picture {
@@ -291,9 +296,50 @@ textarea {
     border-radius: 20px;
     font-family: inter, Verdana, Geneva, Tahoma, sans-serif;
     font-size: xx-large;
-    text-align: center;
-    
+    text-align: center; 
 }
+
+.product_link a {
+display: flex;
+flex-direction: column;
+align-items: center;
+color: #020202;
+}
+
+/*products*/
+
+.product_page {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    max-width: 600px;
+    margin: 0 auto;
+
+}
+
+.product_page_heading, .product_page_add {
+    grid-column: span 6;
+}
+
+.product_page_image, .product_page_description {
+    grid-column: span 3;
+}
+.product_page_reviews, .product_page_details, .product_page_why {
+    grid-column: span 2;
+}
+
+.add_cart {
+    display: block;
+    width: 40%;
+    max-width: 350px;
+    height: 40px;
+    text-align: center;
+    margin: 0 auto;
+    font-family: inter, Verdana;
+    background-color: #AFFFB3;
+    border-radius: 20px;
+}
+
+
 
 /*checkout*/
 
@@ -356,6 +402,15 @@ textarea {
 
 .abort {
     background-color: #fba7a2;
+}
+
+/*checkout and success, popout*/
+
+.popout {
+position: fixed;
+top: 25%;
+max-width: 600px;
+width: 90%;
 }
 
 /*checkout success*/
