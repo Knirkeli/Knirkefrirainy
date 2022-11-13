@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="rainy days checkout page"/>
-    <title>Rainy Days | Checkout</title>
+    <meta name="description" content="Our beautifull autumn jacket hostvaer/Høstvær" />
+    <title>Rainy Days | Hostvaer</title>
     <script src="https://kit.fontawesome.com/6bd7a8590b.js" crossorigin="anonymous"></script>
     <link href="../css/styles.css" rel="stylesheet"/>
   </head>
@@ -19,46 +19,46 @@
         </a>
       </div>
       <div class="cart_button flex_top" href="checkout.html">
-        <a href="checkout.html" alt="Your cart" class="checkout_button cta_button">
-          <i class="fa-solid fa-cart-shopping cart"></i>
-        </a>
+      <a href="checkout.html" alt="Your cart" class="checkout_button cta_button">
+        <i class="fa-solid fa-cart-shopping cart"></i>
+      </a>
       </div>           
     </header>
       <section class="search_section">
-        <input type="text" placeholder="Search" name="Search" alt="Search our products" class="search Searchbar"/>
-        <a href="hostvaer.html">
+          <input type="text" placeholder="Search" name="Search" alt="Search our products" class="search Searchbar"/>
+          <a href="hostvaer.html">
           <button type="submit" class="search_icone"><i class="fa-solid fa-magnifying-glass"></i></button>  
-        </a>
+          </a>
       </section>
-      <Main class="checkout_page">
-        <div class="">
-          <h1>Checkout</h1>
-        </div>
-        <div class="in_cart">
-          <h2>Items in cart</h2>
-          <p>1x hvr jckt</p>
-          <p>2995 kr</p>
-          <p>1x freight</p>
-          <p>299 kr</p>
-        </div>
-        <div class="sum">
-          <h2>Sum</h2>
-          <p>3294 kr</p>
-        </div>
-        <div class="customer">
-          <fieldset class="contact_info">
-            <input type="text" name="name" id="name" class="form__input" placeholder="Name">
-            <input type="text" name="adress" id="adress" class="form__input" placeholder="Adress">
-            <input type="tel" name="tel" id="tel" class="form__input" placeholder="Number">
-            <input type="text" name="country" id="country" class="form__input" placeholder="Country">
-          </fieldset>
-        </div>
-        <div class="pay cta_checkout">
-          <a href="success.html" class="pay_button"> Pay</a>
-        </div>
-        <div class="abort cta_checkout">
-          <a href="index.html" class="abort_button"> Abort</a>
-        </div>
+
+      <Main class="product product_page hostvaer">
+        <h1 class="product_page_heading">Høstvær jacket</h1>
+        <section class="product_page_description">
+          <p>2995</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae cumque, voluptates expedita quibusdam accusamus dolorem. Voluptate earum vel, excepturi labore quam velit sed a asperiores minima odio nihil consectetur blanditiis.
+          </p>
+        </section>
+        <section class="product_page_image"> 
+          <img src="../images/Blue jacket woman.jpeg" alt="woman wearing a blue jacket" class="product on_sale product_picture woman">
+        </section>
+        <section class="product_page_add">
+          <button type="submit" class="add_cart">add to cart</button> 
+        </section>
+        <section class="product_page_reviews">
+          <h3>Reviews</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque voluptatem suscipit repudiandae ullam. Saepe iste eligendi deserunt voluptate corrupti, asperiores optio? Repudiandae quibusdam tenetur impedit commodi doloremque doloribus at quo.
+          </p>
+        </section>
+        <section class="product_page_details">
+          <h3>Details</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque voluptatem suscipit repudiandae ullam. Saepe iste eligendi deserunt voluptate corrupti, asperiores optio? Repudiandae quibusdam tenetur impedit commodi doloremque doloribus at quo.
+          </p>
+        </section>
+        <section class="product_page_why">
+          <h3>Why this product?</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque voluptatem suscipit repudiandae ullam. Saepe iste eligendi deserunt voluptate corrupti, asperiores optio? Repudiandae quibusdam tenetur impedit commodi doloremque doloribus at quo.
+          </p>
+        </section>
       </Main>
       <footer>
         <container class="footer_container">
@@ -68,4 +68,34 @@
         </container> 
     </footer>
     <p class="copy">Copyright: Knirkefri Design &reg;</p>
+    <dialog open class="popout">
+      <div class="">
+        <h1>Checkout</h1>
+      </div>
+      <div class="in_cart">
+        <h2>Items in cart</h2>
+        <p>1x hvr jckt</p>
+        <p>2995 kr</p>
+        <p>1x freight</p>
+        <p>299 kr</p>
+      </div>
+      <div class="sum">
+        <h2>Sum</h2>
+        <p>3294 kr</p>
+      </div>
+      <div class="customer">
+        <fieldset class="contact_info">
+          <input type="text" name="name" id="name" class="form__input" placeholder="Name">
+          <input type="text" name="adress" id="adress" class="form__input" placeholder="Adress">
+          <input type="tel" name="tel" id="tel" class="form__input" placeholder="Number">
+          <input type="text" name="country" id="country" class="form__input" placeholder="Country">
+        </fieldset>
+      </div>
+      <div class="pay cta_checkout">
+        <a href="success.html" class="pay_button"> Pay</a>
+      </div>
+      <div class="abort cta_checkout">
+        <a href="index.html" class="abort_button"> Abort</a>
+      </div>
+    </dialog>
   </body>
