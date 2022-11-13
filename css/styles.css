@@ -9,14 +9,15 @@ header {
     width: 100%;
     height: 350px;
     background-color: #eeeeee;
-    display: flex;
+    display: inline-flex;
     align-items: center;
+    justify-items: center;
     justify-content: space-evenly;
 }
 
 .flex_top {
     height: 80%;
-    width: auto;
+    max-width: 217px;
     aspect-ratio: 1/1;
     border-radius: 50%;
     max-width: 150px;
@@ -30,11 +31,16 @@ header {
 
   
 .logo {
-    width: 30%;
-    height: 80%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    max-width: 100%;
+    max-height: 100%;
+    justify-self: center;
+    align-self: center;
+}
+
+.home_button {
+    max-height: 90%;
+    max-width: 555px;
+    align-content: center;
 }
 
 a {
@@ -65,7 +71,7 @@ a {
     }
 
 .search {
-    display: block;
+    display: inline-block;
     width: calc(100% - 24px);
     font-size: 18px;
     font-weight: 600;
@@ -96,12 +102,20 @@ body {
 }
 
 footer {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+    margin-top: 20px;    
+    width: 100%;
+    height: 120px;
     background-color: #eeeeee;
-    
-}
+    display: flex;
+    justify-content: center;
+   }
+
+.footer_container {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    width: 50%;
+    }
    
 footer a {
     height: 100%;
@@ -109,7 +123,7 @@ footer a {
     border-radius: 20px;
     max-width: 230px;
     max-height: 120px;
-    display: grid;
+    display: flex;
     justify-content: center;
     align-items: center;
     font-family: inter, Verdana, Geneva, Tahoma, sans-serif;
@@ -134,25 +148,29 @@ footer p {
 
 /*home*/
 
-.seasons {
-    display: inline-grid;
+.homepage {
+    display: grid;
     height: 100%;
     width: 100%;  
     justify-content: center;
     align-items: center;
     grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-gap: 0px;
+    line-height:0;
+    letter-spacing: 0;  
     font-family: inter, Verdana, Geneva, Tahoma, sans-serif;
     font-size: xx-large;  
  }
 
 .autumn .winter .spring .summer {
-    display: inline;
-    border-radius: 20px;
+    display: flex;
+    justify-content:
+
 }
 
 .cta_picture {
-    display: inline-block;
+    margin: -5px;
+    width: 560px;
+    height: 450px;
 }
 
 /*about*/
@@ -177,8 +195,6 @@ footer p {
     min-height: 20vh;
     border-radius: 20px;
     text-align: left;
-    
-    
 }
 
 /*Return*/
@@ -209,16 +225,27 @@ textarea {
     display: grid; 
     grid-template-columns: 1;
     justify-content: center;
+    color: #fdfcfd;
+}
+
+.contact_page h2 {
+    text-transform: uppercase;
 }
 
 .contact_elements {
-    display: inline-grid;
+    display: grid;
     max-width: 1000px;
     min-width: 1000px;
     min-height: 20%;
-    background-color: #d9d9d9;
+    background-color: #999;
     text-align: center;
     border-radius: 20px;
+}
+.contact_image {
+    max-width: 300px;
+    max-height: 300px;
+    border-radius: 20px;
+    background-color: #d9d9d9;
 }
 
 
@@ -226,18 +253,28 @@ textarea {
 /*season pages husk å legge rett html på alle*/
 
 .jackets_sale {
-    display: grid;
-    height: 100%;
-    width: 100%;  
+    display: inline-grid;
+ 
+    padding-top: 20px;
     justify-content: center;
     align-items: center;
+    height: 100%;
+    width: 20%;  
     grid-template-columns: 2fr 2fr;
-    grid-gap: 500px;
+    grid-gap: 40px;
     font-family: inter, Verdana, Geneva, Tahoma, sans-serif;
     font-size: xx-large;
     background-color: #ffffff;
-    color: #6e566e;
+    color: #020202;
+    border-style: solid;
+}
+
+.product_link {
+    border-style: solid;
     
+    align-self: center;
+    
+
 }
 
 .product_picture {
@@ -258,10 +295,6 @@ textarea {
     
 }
 
-.product_link {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
 
-}
 
 
