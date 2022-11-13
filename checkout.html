@@ -24,12 +24,12 @@
       </a>
       </div>           
     </header>
-      <section class="search_section">
-          <input type="text" placeholder="Search" name="Search" alt="Search our products" class="search Searchbar"/>
-          <a href="hostvaer.html">
-          <button type="submit" class="search_icone"><i class="fa-solid fa-magnifying-glass"></i></button>  
-          </a>
-      </section>
+    <section class="search_section">
+      <form action="/hostvaer.html">
+        <input type="text" placeholder="Search" name="Search" alt="Search our products" class="search Searchbar"/>
+        <button aria-label="søk" type="submit" class="search_icon"><i class="fa-solid fa-magnifying-glass"></i></button>  
+      </form>
+    </section>
 
       <Main class="product product_page hostvaer">
         <h1 class="product_page_heading">Høstvær jacket</h1>
@@ -69,9 +69,9 @@
     </footer>
     <p class="copy">Copyright: Knirkefri Design &reg;</p>
     <dialog open class="popout">
-      <div class="">
-        <h1>Checkout</h1>
-      </div>
+      <div class="checkout_page">
+        <h1 class="checkout_heading">Checkout</h1>
+
       <div class="in_cart">
         <h2>Items in cart</h2>
         <p>1x hvr jckt</p>
@@ -84,12 +84,12 @@
         <p>3294 kr</p>
       </div>
       <div class="customer">
-        <fieldset class="contact_info">
+        <form class="contact_info">
           <input type="text" name="name" id="name" class="form__input" placeholder="Name">
           <input type="text" name="adress" id="adress" class="form__input" placeholder="Adress">
           <input type="tel" name="tel" id="tel" class="form__input" placeholder="Number">
           <input type="text" name="country" id="country" class="form__input" placeholder="Country">
-        </fieldset>
+        </form>
       </div>
       <div class="pay cta_checkout">
         <a href="success.html" class="pay_button"> Pay</a>
@@ -97,5 +97,7 @@
       <div class="abort cta_checkout">
         <a href="index.html" class="abort_button"> Abort</a>
       </div>
+     </div>
     </dialog>
   </body>
+</html>
