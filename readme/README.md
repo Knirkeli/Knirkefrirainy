@@ -1,7 +1,7 @@
 # Rainy Days
 
 A simple overview of use/purpose.
-github reposetory: 
+github reposetory:https://github.com/Knirkeli/Knirkefrirainy 
 
 figma prototype: https://www.figma.com/proto/VP87lebSOdSqFsa72TVvn8/Rainyday?page-id=0%3A1&node-id=3%3A2&starting-point-node-id=3%3A2&scaling=scale-down
 
@@ -9,7 +9,7 @@ Netlify: rainydz.netlify.app
 
 ## Description
 
-An in-depth paragraph about your project and overview of use.
+This is my design for the Rainy days 
 
 ## Getting Started
 

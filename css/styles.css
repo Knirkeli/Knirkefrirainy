@@ -28,6 +28,11 @@ header {
     font-family: inter, Verdana, Geneva, Tahoma, sans-serif;
     font-size: xx-large;
 }
+@media only screen and (min-widt:600px) and (max-width:900px) {
+    .flex_top {
+        width: 50%;
+    }
+}
 
   
 .logo {
@@ -54,11 +59,11 @@ a {
 }
 
 .cart {
-    color: #fba7a2;
+    color: #121212;
 }
 
 .sale_button {
-    color: #AFFFB3;
+    color: #121212;
 }
 
 .cart_button {
@@ -165,21 +170,43 @@ footer p {
     width: 100%;  
     justify-content: center;
     align-items: center;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr;
     line-height:0;
     letter-spacing: 0;  
     font-family: inter, Verdana, Geneva, Tahoma, sans-serif;
     font-size: xx-large;  
  }
 
+.slogan {   
+    margin: auto;
+    top: 10px;
+    max-height: 50px;
+}
+
+.slogan_text {
+    font-size: 3.5rem;
+}
+
 .autumn .winter .spring .summer {
     display: flex;
-    justify-content:
+    text-align: center;
+    }
+
+
+.season_name {
+    font-family: inter, Verdana;
+    color:#020202;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 40px;
 
 }
 
 .cta_picture {
     margin: -5px;
+    margin-bottom: 25px;
     width: 560px;
     height: 450px;
 }
@@ -188,8 +215,6 @@ footer p {
 /*about*/
 
 .about_page {
-   background-image: url(../images/Girlandthestorm.jpg);
-   background-repeat: no-repeat;
    justify-items: center;
    background-size:cover;
    text-align: center;   
@@ -198,12 +223,15 @@ footer p {
 .about_elements {
     display: inline-block;
     background-color: #fdfcfd;
-    opacity: 50%;
     max-width: 80%;
     min-width: 80%;
     min-height: 20vh;
     border-radius: 20px;
     text-align: left;
+}
+
+.about_elements h2 {
+    color: #020202
 }
 
 /*Return*/
@@ -231,6 +259,7 @@ textarea {
     grid-template-columns: 1;
     justify-content: center;
     color: #fdfcfd;
+    gap: 5px;
 }
 
 .contact_page h2 {
@@ -261,7 +290,7 @@ textarea {
 
 
 
-/*season pages husk å legge rett html på alle*/
+/*season pages*/
 
 .jackets_sale {
     display: grid; 
@@ -288,7 +317,7 @@ textarea {
     max-width: 300px;
     max-height: 300px;
     border-radius: 20px;
-    background-color: #d9d9d9;
+    background-color: none;
 }
 
 .gender {
