@@ -17,7 +17,6 @@ header {
 
 .flex_top {
     height: 80%;
-    max-width: 217px;
     aspect-ratio: 1/1;
     border-radius: 50%;
     max-width: 150px;
@@ -28,19 +27,24 @@ header {
     font-family: inter, Verdana, Geneva, Tahoma, sans-serif;
     font-size: xx-large;
 }
-@media only screen and (min-widt:600px) and (max-width:900px) {
+@media  (max-width:550px) {
     .flex_top {
-        width: 50%;
+        width: 50px;
+        height: 50px;
+        aspect-ratio: 1/1;
     }
+     
 }
 
-  
 .logo {
     max-width: 100%;
     max-height: 100%;
     justify-self: center;
     align-self: center;
 }
+
+
+
 
 .home_button {
     max-height: 90%;
@@ -58,12 +62,24 @@ a {
     font-size: 4.5em;
 }
 
-.cart {
+.sale_button {
     color: #121212;
 }
 
-.sale_button {
+.cart {
     color: #121212;
+    font-size: 2em;
+}
+
+@media (max-width:550px) {
+ .cart { 
+   font-size: 0.5em;
+   justify-self: center; 
+}
+
+.on_sale {
+    font-size: 1em;
+}
 }
 
 .cart_button {
@@ -106,9 +122,6 @@ a {
 }
 p h1 h2 h3{
     font-family: inter, Verdana, Geneva, Tahoma, sans-serif;    
-}
-.cart { 
-    font-size: 2em;
 }
 
 body {
@@ -175,16 +188,26 @@ footer p {
     letter-spacing: 0;  
     font-family: inter, Verdana, Geneva, Tahoma, sans-serif;
     font-size: xx-large;  
+    text-align: center;
  }
 
 .slogan {   
     margin: auto;
     top: 10px;
-    max-height: 50px;
-}
+    height: 100px;
+    }
 
 .slogan_text {
-    font-size: 3.5rem;
+    font-size: 1.5em;
+    line-height: 1.5;
+   }
+
+@media (max-width:600px) {
+    .slogan_text {
+        font-size: 1em;
+        max-width: 50%;
+        display: inline-block;
+    }
 }
 
 .autumn .winter .spring .summer {
@@ -201,7 +224,15 @@ footer p {
     align-items: center;
     margin-top: 10px;
     margin-bottom: 40px;
+}
 
+@media (max-width:600px) {
+    .season_name {
+        font-size: 1em;
+        max-width: 50%;
+        display: inline-block;
+        line-height: 1.5;
+    }
 }
 
 .cta_picture {
@@ -211,6 +242,15 @@ footer p {
     height: 450px;
 }
 
+@media (max-width:600px) {
+    .cta_picture {
+        margin: -5px;
+        margin-bottom: 25px;
+        margin-top: 25px;
+        width: 320px;
+        height: 210px;
+    }
+}
 
 /*about*/
 
