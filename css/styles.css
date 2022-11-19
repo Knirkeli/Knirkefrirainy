@@ -319,11 +319,18 @@ textarea {
 
 /*contact*/
 
+.contact_page h1 {
+    display: inline-block;
+    text-align: center;
+    width:100%;
+    text-transform: uppercase;
+}
+
 .contact_page {
     display: grid; 
     grid-template-columns: 1fr;
     justify-content: center;
-    color: #fdfcfd;
+    color: #090509;
     gap: 5px;
 }
 
@@ -432,7 +439,7 @@ color: #020202;
 .product_page {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    max-width: 80%;
+    max-width: 800px;
     margin: 0 auto;
 
 }
@@ -549,12 +556,14 @@ color: #020202;
     background-color: #AFFFB3;
     padding: 10px 50px;
     border-radius: 20px;
+    color: #020202;
 }
 
 .abort_button, .home_more{
     background-color: #fba7a2;
     padding: 10px 50px;
     border-radius: 20px;
+    color: #020202;
 }
 
 @media (max-width: 500px){

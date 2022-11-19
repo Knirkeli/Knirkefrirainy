@@ -9,7 +9,8 @@ Netlify: rainydz.netlify.app
 
 ## Description
 
-This is my design for the Rainy days 
+This is my design for the Rainy days
+I have followd my design, but have made some changes to accomodate screen sizes and better contrast.
 
 ## Getting Started
 
