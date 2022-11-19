@@ -88,7 +88,7 @@ a {
 .search_section {
     border-radius: 20px;
     max-width: 555px;
-    margin: 50px auto;
+    margin: 50px auto 0px auto;
     position:relative
     }
 
@@ -162,10 +162,28 @@ footer a {
 }
 
 .footer_button {
-   min-width: 230px;
-   min-height: 120px;
+   width: 230px;
+   height: 120px;
    justify-content: center;
 }
+
+@media (max-width: 765px){
+    .footer_button {
+        width: 100px;
+        height: 100px;
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 380px){
+    .footer_button {
+        width: 50px;
+        height: 100px;
+        font-size: 0.8rem;
+    }
+}
+
+
 
 footer p {
     right: 0px;
@@ -194,7 +212,7 @@ footer p {
 .slogan {   
     margin: auto;
     top: 10px;
-    height: 100px;
+    
     }
 
 .slogan_text {
@@ -248,7 +266,7 @@ footer p {
         margin-bottom: 25px;
         margin-top: 25px;
         width: 320px;
-        height: 210px;
+        height: 250px;
     }
 }
 
@@ -444,16 +462,40 @@ color: #020202;
 
 
 
-/*checkout*/
+/*checkout and success, popout*/
 
+.popout {
+    position: fixed;
+    top: 25%;
+    max-width: 600px;
+    width: 90%;
+    }
+    
+    @media (max-width:600px) {
+        .popout {
+            position: fixed;
+            top: 25%;
+            max-width: 100%;
+            justify-items: auto;
+        }
+    }
+    
 .checkout_page {
     display: grid;
     font-family: inter,Verdana;
-    grid-template-columns: 1fr 1fr;
     justify-items: center;
     gap: 30px;
    }
 
+   @media (max-width:600px) {
+    .checkout_page {
+        gap: 10px;
+        width:80%;
+        padding: 10px;
+        text-align: center;
+    }
+
+}
    .checkout_heading {
     grid-column: span 2;
    }
@@ -462,13 +504,16 @@ color: #020202;
     background-color: #999;
     border-radius: 20px;
     padding: 20px;
+    grid-column:span 1;
+    text-align: center;
 }
 
 .sum {
     background-color: #999;
     border-radius: 20px;
     text-align: center;
-    padding: 20px;
+    padding: 10px;
+    grid-column: span 1 1;
 }
 
 .sum p {
@@ -512,19 +557,8 @@ color: #020202;
     border-radius: 20px;
 }
 
-/*checkout and success, popout*/
-
-.popout {
-position: fixed;
-top: 25%;
-max-width: 600px;
-width: 90%;
-}
-
-@media (max-width:600px) {
-    .popout {
-        max-width: 90%;
-
+@media (max-width: 500px){
+    .sale_more, .home_more {
+        font-size: 0.5em;
     }
 }
-
