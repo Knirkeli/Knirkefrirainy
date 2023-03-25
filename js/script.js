@@ -9,7 +9,7 @@ const searchInput = document.querySelector("[product-search-field]");
 let products = [];
 
 searchInput.addEventListener("input", (e) => {
-  const value = e.target.value;
+  const value = e.target.value.toLowerCase();
   if (value === "") {
     products.forEach((product) => {
       product.element.classList.add("hide");
@@ -17,7 +17,8 @@ searchInput.addEventListener("input", (e) => {
   } else {
     products.forEach((product) => {
       const isVisible =
-        product.name.includes(value) || product.price.includes(value);
+        product.name.toLowerCase().includes(value) ||
+        product.price.toLowerCase().includes(value);
       product.element.classList.toggle("hide", !isVisible);
     });
   }
@@ -30,11 +31,12 @@ fetch("/products/products.json")
       const searchResults =
         searchDisplayTempelate.content.cloneNode(true).children[0];
       const header = searchResults.querySelector("[search-header]");
-      //   const img = searchResults.querySelector("[search-img]");
+      const img = searchResults.querySelector("[search-img]");
       const price = searchResults.querySelector("[search-price]");
       header.textContent = product.name;
-      //   img.textContent = product.image;
+      img.textContent = product.image;
       price.textContent = product.price;
+      searchResults.classList.add("hide");
       productSearchContainer.append(searchResults);
       return {
         name: product.name,
