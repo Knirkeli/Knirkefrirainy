@@ -10,11 +10,17 @@ let products = [];
 
 searchInput.addEventListener("input", (e) => {
   const value = e.target.value;
-  products.forEach((product) => {
-    const isVisible =
-      product.name.includes(value) || product.price.includes(value);
-    product.element.classList.toggle("hide", !isVisible);
-  });
+  if (value === "") {
+    products.forEach((product) => {
+      product.element.classList.add("hide");
+    });
+  } else {
+    products.forEach((product) => {
+      const isVisible =
+        product.name.includes(value) || product.price.includes(value);
+      product.element.classList.toggle("hide", !isVisible);
+    });
+  }
 });
 
 fetch("/products/products.json")
