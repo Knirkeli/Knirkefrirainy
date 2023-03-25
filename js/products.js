@@ -1,5 +1,5 @@
 
-
+/*
 const products = [
 {   id: 1,
     name: 'Apelsin', 
@@ -41,4 +41,4 @@ const products = [
     Image: "/images/persimon.jpeg",
 } ,
 ];
-console.log(products);
+console.log(products);/*

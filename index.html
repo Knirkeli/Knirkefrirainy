@@ -57,14 +57,16 @@
     </header>
 
     <section class="search_section" label="searchbar">
-      <form action="/hostvaer.html" label="searchbar">
+      <!-- <form action="/hostvaer.html" label="searchbar"> -->
         <input
-          type="text"
+          type="search"
           placeholder="Search"
+          id="search"
           name="Search"
           aria="Search our products"
           label="Searchbar"
           class="search Searchbar"
+          product-search-field
         />
         <button aria-label="search" type="submit" class="search_icon">
           <i class="fa-solid fa-magnifying-glass" label="searchbar"></i>
@@ -122,6 +124,23 @@
           </a>
         </div>
       </div>
+      <div
+        class="search_results_section popout_search_result"
+        product-search-container
+      ></div>
+      <template search-display-tempelate>
+        <dialog open class="popout search_pop">
+          <div class="popout_search_result">
+            <div class="product_searched">
+              <h2 class="search_header" search-header></h2>
+              <div class="search_img" search-img>
+                <img search-img alt="placeholder" />
+              </div>
+            </div>
+            <div class="search_price" search-price></div>
+          </div>
+        </dialog>
+      </template>
     </main>
 
     <footer>

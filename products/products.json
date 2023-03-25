@@ -3,7 +3,7 @@
     "id": 1,
     "name": "Apelsin",
     "color": "orange",
-    "fit": "woman",
+    "fit": "men",
     "sason": "spring",
     "description": "Light orange rain jacket, perfect for a spring hike",
     "image": ".images/apelsin.jpeg",
@@ -36,9 +36,9 @@
     "id": 4,
     "name": "Persimon",
     "color": "orange",
-    "fit": "men",
+    "fit": "woman",
     "sason": "winter",
-    "description": "Watherproof and breathing orange jacket for the winter rain and snow, insulated to keep out the cold",
+    "description": "Watherproof and breathing orange coat for the winter rain and snow, insulated to keep out the cold",
     "image": ".images/apelsin.jpeg",
     "price": "2995"
   }

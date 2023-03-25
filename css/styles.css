@@ -80,6 +80,32 @@ a {
 .cart_button {
   background-color: #afffb3;
 }
+
+/*search */
+
+.search_pop {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: fit-content;
+  min-width: fit-content;
+}
+
+.popout_search_result {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 200px;
+  border-style: solid;
+  border-color: #020202;
+}
+
+.search_img img {
+  max-width: 150px;
+  max-height: 150px;
+  padding: 10px;
+  border-radius: 50%;
+}
+
 .search_section {
   border-radius: 20px;
   max-width: 555px;
@@ -114,6 +140,11 @@ a {
   border-style: none;
   background-color: transparent;
 }
+
+.hide {
+  display: none;
+}
+
 p h1 h2 h3 {
   font-family: inter, Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -251,6 +282,7 @@ footer p {
   margin: -5px;
   margin-bottom: 25px;
   width: 80vw;
+  max-height: 650px;
 }
 
 @media (max-width: 600px) {
