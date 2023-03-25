@@ -6,7 +6,7 @@ const productSearchContainer = document.querySelector(
 );
 const searchInput = document.querySelector("[product-search-field]");
 
-let product = [];
+let products = [];
 
 searchInput.addEventListener("input", (e) => {
   const value = e.target.value;
