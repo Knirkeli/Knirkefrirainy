@@ -6,14 +6,15 @@ const productSearchContainer = document.querySelector(
 );
 const searchInput = document.querySelector("[product-search-field]");
 
-let products = [];
+let product = [];
 
 searchInput.addEventListener("input", (e) => {
   const value = e.target.value;
-  products.forEach(product => {
-  const isVisible = product.name.includes(value);  || product.price.includes(value);
-  })
-  product.element.classList.toggle("hide", !isVisible)
+  products.forEach((product) => {
+    const isVisible =
+      product.name.includes(value) || product.price.includes(value);
+  });
+  product.element.classList.toggle("hide", !isVisible);
 });
 
 fetch("/products/products.json")
