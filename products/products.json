@@ -7,7 +7,8 @@
     "sason": "spring",
     "description": "Light orange rain jacket, perfect for a spring hike",
     "image": ".images/apelsin.jpeg",
-    "price": "2995"
+    "price": "2995",
+    "link": "/apelsin.html"
   },
 
   {
@@ -18,7 +19,8 @@
     "sason": "autumn",
     "description": "Watherproof and breathing blue jacket for the autumn rain, keeps you comfy and dry",
     "image": ".images/hostvaer.jpeg",
-    "price": "2995"
+    "price": "2995",
+    "link": "/hostvaer.html"
   },
 
   {
@@ -29,7 +31,8 @@
     "sason": "autumn",
     "description": "Watherproof and breathing green jacket for the autumn rain, rugged and durable. Keeps you comfy and dry",
     "image": ".images/paere.jpeg",
-    "price": "2995"
+    "price": "2995",
+    "link": "/paere.html"
   },
 
   {
@@ -40,6 +43,7 @@
     "sason": "winter",
     "description": "Watherproof and breathing orange coat for the winter rain and snow, insulated to keep out the cold",
     "image": ".images/apelsin.jpeg",
-    "price": "2995"
+    "price": "2995",
+    "link": "/persimon.html"
   }
 ]
