@@ -6,15 +6,20 @@ const productSearchContainer = document.querySelector(
 );
 const searchInput = document.querySelector("[product-search-field]");
 
+let products = [];
+
 searchInput.addEventListener("input", (e) => {
   const value = e.target.value;
-  console.log(value);
+  products.forEach(product => {
+  const isVisible = product.name.includes(value);  || product.price.includes(value);
+  })
+  product.element.classList.toggle("hide", !isVisible)
 });
 
 fetch("/products/products.json")
   .then((res) => res.json())
   .then((data) => {
-    data.forEach((product) => {
+    products = data.map((product) => {
       const searchResults =
         searchDisplayTempelate.content.cloneNode(true).children[0];
       const header = searchResults.querySelector("[search-header]");
@@ -24,6 +29,10 @@ fetch("/products/products.json")
       img.mediaContent = product.image;
       price.textContent = product.price;
       productSearchContainer.append(searchResults);
-      console.log(product);
+      return {
+        name: product.name,
+        price: product.price,
+        element: searchResults,
+      };
     });
   });
