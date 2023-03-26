@@ -4,10 +4,10 @@
     "name": "Apelsin",
     "color": "orange",
     "fit": "men",
-    "sason": "spring",
+    "season": "spring",
     "description": "Light orange rain jacket, perfect for a spring hike",
-    "image": ".images/apelsin.jpeg",
-    "price": "2995",
+    "image": "/images/apelsin.jpeg",
+    "price": 2995,
     "link": "/apelsin.html"
   },
 
@@ -16,10 +16,10 @@
     "name": "Hostvaer",
     "color": "blue",
     "fit": "woman",
-    "sason": "autumn",
+    "season": "autumn",
     "description": "Watherproof and breathing blue jacket for the autumn rain, keeps you comfy and dry",
-    "image": ".images/hostvaer.jpeg",
-    "price": "2995",
+    "image": "/images/hostvaer.jpeg",
+    "price": 2995,
     "link": "/hostvaer.html"
   },
 
@@ -28,10 +28,10 @@
     "name": "Paere",
     "color": "green",
     "fit": "men",
-    "sason": "autumn",
+    "season": "autumn",
     "description": "Watherproof and breathing green jacket for the autumn rain, rugged and durable. Keeps you comfy and dry",
-    "image": ".images/paere.jpeg",
-    "price": "2995",
+    "image": "/images/paere.jpeg",
+    "price": 2995,
     "link": "/paere.html"
   },
 
@@ -40,10 +40,10 @@
     "name": "Persimon",
     "color": "orange",
     "fit": "woman",
-    "sason": "winter",
+    "season": "winter",
     "description": "Watherproof and breathing orange coat for the winter rain and snow, insulated to keep out the cold",
-    "image": ".images/apelsin.jpeg",
-    "price": "2995",
+    "image": "/images/persimon.jpeg",
+    "price": 2995,
     "link": "/persimon.html"
   }
 ]

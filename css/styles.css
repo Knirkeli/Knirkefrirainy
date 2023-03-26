@@ -83,21 +83,30 @@ a {
 
 /*search */
 
+.earch_results_section {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .search_pop {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   max-height: fit-content;
   max-width: fit-content;
+  align-items: center;
 }
 
 .popout_search_result {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  flex-direction: row;
   align-items: center;
-  max-width: 200px;
+  min-width: 200px;
   border-style: solid;
   border-color: #020202;
-  height: 300px;
+  min-height: 300px;
+  gap: 10px;
 }
 
 .search_img img {

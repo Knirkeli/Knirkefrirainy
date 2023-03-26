@@ -34,7 +34,7 @@ fetch("/products/products.json")
       const img = searchResults.querySelector("[search-img]");
       const price = searchResults.querySelector("[search-price]");
       header.textContent = product.name;
-      img.textContent = product.image;
+      img.src = product.image;
       price.textContent = product.price;
       searchResults.classList.add("hide");
       productSearchContainer.append(searchResults);
