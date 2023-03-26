@@ -34,11 +34,13 @@ fetch("/products/products.json")
         searchDisplayTempelate.content.cloneNode(true).children[0];
       const header = searchResults.querySelector("[search-header]");
       const img = searchResults.querySelector("img[search-img]");
+      const link = searchResults.querySelector(".search_link");
       console.log(img);
       const price = searchResults.querySelector("[search-price]");
       header.textContent = product.name;
       img.src = product.image;
       price.textContent = product.price;
+      link.setAttribute("href", product.link);
       searchResults.classList.add("hide");
       productSearchContainer.append(searchResults);
       return {

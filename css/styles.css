@@ -88,6 +88,7 @@ a {
   display: flex;
   flex-wrap: wrap;
   background-color: #d9d9d9;
+  width: 100%;
 }
 
 .search_pop {
@@ -107,6 +108,7 @@ a {
   border-style: solid;
   border-color: #020202;
   gap: 30px;
+  box-sizing: border-box;
 }
 
 .search_img {
@@ -114,6 +116,12 @@ a {
   max-height: 50px;
   padding: 10px;
   border-radius: 50%;
+}
+
+.search_link {
+  display: block;
+  width: 100%;
+  color: black;
 }
 
 .search_section {

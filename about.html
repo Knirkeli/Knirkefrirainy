@@ -9,7 +9,7 @@
       src="https://kit.fontawesome.com/6bd7a8590b.js"
       crossorigin="anonymous"
     ></script>
-    <link href="../css/styles.css" rel="stylesheet" />
+    <link href="./css/styles.css" rel="stylesheet" />
     <!-- Hotjar Tracking Code for my site -->
     <script>
       (function (h, o, t, j, a, r) {
@@ -58,19 +58,37 @@
         </a>
       </div>
     </header>
-    <section class="search_section">
-      <form action="/hostvaer.html">
+    <section class="search_section" label="searchbar">
+      <form action="post">
         <input
-          type="text"
+          type="search"
           placeholder="Search"
+          id="search"
           name="Search"
-          alt="Search our products"
+          aria="Search our products"
+          label="Searchbar"
           class="search Searchbar"
+          product-search-field
         />
-        <button aria-label="søk" type="submit" class="search_icon">
-          <i class="fa-solid fa-magnifying-glass"></i>
+        <button aria-label="search" type="submit" class="search_icon">
+          <i class="fa-solid fa-magnifying-glass" label="searchbar"></i>
         </button>
       </form>
+      <div class="search_results_section" product-search-container></div>
+      <template search-display-tempelate>
+        <div open class="search_pop">
+          <a class="search_link">
+            <div class="popout_search_result">
+              <div class="search_img_container" search-img>
+                <img class="search_img" search-img alt="" />
+              </div>
+              <h2 class="search_header" search-header></h2>
+
+              <div class="search_price" search-price></div>
+            </div>
+          </a>
+        </div>
+      </template>
     </section>
 
     <main class="about_page">

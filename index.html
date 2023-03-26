@@ -73,6 +73,20 @@
         </button>
       </form>
       <div class="search_results_section" product-search-container></div>
+      <template search-display-tempelate>
+        <div open class="search_pop">
+          <a class="search_link">
+            <div class="popout_search_result">
+              <div class="search_img_container" search-img>
+                <img class="search_img" search-img alt="" />
+              </div>
+              <h2 class="search_header" search-header></h2>
+
+              <div class="search_price" search-price></div>
+            </div>
+          </a>
+        </div>
+      </template>
     </section>
 
     <main class="homepage">
@@ -125,19 +139,6 @@
           </a>
         </div>
       </div>
-
-      <template search-display-tempelate>
-        <div open class="search_pop">
-          <div class="popout_search_result">
-            <div class="search_img_container" search-img>
-              <img class="search_img" search-img alt="placeholder" />
-            </div>
-            <h2 class="search_header" search-header></h2>
-
-            <div class="search_price" search-price></div>
-          </div>
-        </div>
-      </template>
     </main>
 
     <footer>

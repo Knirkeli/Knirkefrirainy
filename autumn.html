@@ -61,19 +61,37 @@
         </a>
       </div>
     </header>
-    <section class="search_section">
-      <form action="/hostvaer.html">
+    <section class="search_section" label="searchbar">
+      <form action="post">
         <input
-          type="text"
+          type="search"
           placeholder="Search"
+          id="search"
           name="Search"
-          alt="Search our products"
+          aria="Search our products"
+          label="Searchbar"
           class="search Searchbar"
+          product-search-field
         />
-        <button aria-label="søk" type="submit" class="search_icon">
-          <i class="fa-solid fa-magnifying-glass"></i>
+        <button aria-label="search" type="submit" class="search_icon">
+          <i class="fa-solid fa-magnifying-glass" label="searchbar"></i>
         </button>
       </form>
+      <div class="search_results_section" product-search-container></div>
+      <template search-display-tempelate>
+        <div open class="search_pop">
+          <a class="search_link">
+            <div class="popout_search_result">
+              <div class="search_img_container" search-img>
+                <img class="search_img" search-img alt="" />
+              </div>
+              <h2 class="search_header" search-header></h2>
+
+              <div class="search_price" search-price></div>
+            </div>
+          </a>
+        </div>
+      </template>
     </section>
     <section class="sale_header product_header">
       <h1>Our autumn jackets!</h1>
@@ -88,7 +106,7 @@
       <div class="product_link">
         <a href="apelsin.html">
           <img
-            src="../images/Orange jacket men.jpeg"
+            src="./images/apelsin.jpeg"
             alt="orange raincoat for men"
             class="picture product product_picture man1"
           />
@@ -98,8 +116,8 @@
       <div class="product_link">
         <a href="persimon.html">
           <img
-            src="../images/Orange jacket Woman.jpeg"
-            alt="woman wearing a orange jacket"
+            src="./images/persimon.jpeg"
+            alt="orange rain coate"
             class="picture product product_picture man2"
           />
           <t class="prise">1995</t>
@@ -108,7 +126,7 @@
       <div class="product_link">
         <a href="paere.html">
           <img
-            src="../images/Green jacket men.jpeg"
+            src="./images/paere.jpeg"
             alt="green rain jacketfor men"
             class="picture product product_picture woman1"
           />
@@ -118,7 +136,7 @@
       <div class="product_link">
         <a href="hostvaer.html">
           <img
-            src="../images/Blue jacket woman.jpeg"
+            src="./images/hostvaer.jpeg"
             alt="woman wearing a blue jacket"
             class="picture product product_picture woman2"
           />
