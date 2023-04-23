@@ -29,7 +29,7 @@ searchInput.addEventListener("input", (e) => {
 
 /* api */
 
-const apiBase = "http://localhost/rainydays";
+const apiBase = "https://noroffcors.onrender.com/https://knirkefridesign.no/";
 const woocommerceBase = "/wp-json/wc/store";
 const productBase = "/products";
 
