@@ -1,4 +1,4 @@
-const apiBase = "http://localhost/rainydays";
+const apiBase = "https://knirkefridesign.no/";
 const woocommerceBase = "/wp-json/wc/store";
 const productBase = "/products";
 
