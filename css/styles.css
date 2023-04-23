@@ -473,6 +473,38 @@ textarea {
   color: #020202;
 }
 
+/*js display product grid*/
+
+.featured {
+  display: inline-block;
+  margin-left: 45%;
+  margin-top: 25px;
+}
+
+.product img {
+  max-width: 300px;
+  max-height: 300px;
+  border-radius: 20px;
+  background-color: none;
+}
+
+.new-container {
+  display: grid;
+  padding-top: 20px;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  max-width: 750px;
+  grid-template-columns: 2fr 2fr;
+  grid-gap: 40px;
+  font-family: inter, Verdana, Geneva, Tahoma, sans-serif;
+  font-size: xx-large;
+  background-color: #ffffff;
+  color: #020202;
+  margin: 0 auto;
+  text-align: center;
+}
+
 /*products*/
 
 .product_page {

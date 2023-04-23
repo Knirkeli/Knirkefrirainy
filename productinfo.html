@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Get high quality clothes for your rainy adventures"
+      content="our autumn collection of high quality rain jackets"
     />
-    <title>Rainy Days | Home</title>
+    <title>Rainy Days | autumn</title>
     <script
       src="https://kit.fontawesome.com/6bd7a8590b.js"
       crossorigin="anonymous"
     ></script>
-    <link href="./css/styles.css" rel="stylesheet" />
+    <link href="/css/styles.css" rel="stylesheet" />
     <!-- Hotjar Tracking Code for my site -->
     <script>
       (function (h, o, t, j, a, r) {
@@ -30,12 +30,19 @@
       })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
     </script>
     <script defer src="js/script.js" type="module"></script>
-    <script defer src="js/index.js" type="module"></script>
+    <script defer src="js/product.js" type="module"></script>
+    <!-- <script defer src="js/index.js" type="module"></script> -->
   </head>
   <body>
     <header>
       <div class="on_sale flex_top">
-        <a href="sale.html" class="sale_button cta_button"> Sale</a>
+        <a
+          href="sale.html"
+          alt="Products on sale"
+          class="sale_button cta_button"
+        >
+          Sale</a
+        >
       </div>
       <div class="home_button">
         <a href="index.html">
@@ -56,7 +63,6 @@
         </a>
       </div>
     </header>
-
     <section class="search_section" label="searchbar">
       <form action="post">
         <input
@@ -90,75 +96,31 @@
       </template>
     </section>
 
-    <main class="homepage">
-      <section class="slogan">
-        <h1 class="slogan_text" aria="hading">
-          No bad weather. Only grate clothes!
-        </h1>
-      </section>
-      <div class="season_cta">
-        <div class="autumn">
-          <a href="productdisplay.html" class="cta_autumn product_picture">
-            <img
-              src="./images/Autumn.jpg"
-              alt="our autumn products"
-              class="picture autumn autumn_picture cta_picture autumn1"
-            />
-            <h2 class="season_name">Autumn jackets</h2>
-          </a>
-        </div>
-
-        <div class="winter">
-          <a href="productdisplay.html" class="cta_winter product_picture">
-            <img
-              src="./images/winter.jpg"
-              alt="our winter products"
-              class="picture winter winter_picture cta_picture winter1"
-            />
-
-            <h2 class="season_name">winter jackets</h2>
-          </a>
-        </div>
-        <div class="spring">
-          <a href="productdisplay.html" class="cta_spring product_picture">
-            <img
-              src="./images/spring.jpg"
-              alt="our spring products"
-              class="picture spring spring_picture cta_picture spring1"
-            />
-            <h2 class="season_name">Spring jackets</h2>
-          </a>
-        </div>
-        <div class="summer">
-          <a href="productdisplay.html" class="cta_summer product_picture">
-            <img
-              src="./images/summer.jpg"
-              alt="our summer products"
-              class="picture summer summer_picture cta_picture summer1"
-            />
-            <h2 class="season_name">Summer jackets</h2>
-          </a>
-        </div>
-      </div>
+    <label class="featured">
+      <input type="checkbox" id="featured-only" />
+      Show featured products
+    </label>
+    <main class="products_display">
+      <div class="new-container"></div>
     </main>
 
     <footer>
       <container class="footer_container">
         <a
           href="about.html"
-          aria-label="about us"
+          alt="about us"
           class="about_button cta_button footer_button"
           >About</a
         >
         <a
           href="return.html"
-          aria-label="return product"
+          alt="return product"
           class="return_button cta_button footer_button"
           >Return</a
         >
         <a
           href="contact.html"
-          aria-label="contact us"
+          alt="contact us"
           class="contact_button cta_button footer_button"
           >Contact</a
         >
