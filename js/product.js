@@ -1,5 +1,5 @@
 const corsFix = "https://noroffcors.onrender.com/";
-const apiBase = "https://knirkefridesign.no/";
+const apiBase = "https://knirkefridesign.no";
 const woocommerceBase = "/wp-json/wc/store";
 const productBase = "/products";
 
