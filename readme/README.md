@@ -45,4 +45,3 @@ Any advice for common problems or issues.
 
 Eirik Kirkeli knirkeli88@msn.com
 
-Noroff admin user $p3vwjb8nhp#YkK9xpvU2C(S
