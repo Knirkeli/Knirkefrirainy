@@ -1,4 +1,5 @@
-const apiBase = "https://noroffcors.onrender.com/https://knirkefridesign.no/";
+const corsFix = "https://noroffcors.onrender.com/";
+const apiBase = "https://knirkefridesign.no/";
 const woocommerceBase = "/wp-json/wc/store";
 const productBase = "/products";
 
@@ -6,7 +7,7 @@ const pagesBase = "/wp-json/wp/v2/pages";
 
 const fullPagesURL = apiBase + pagesBase;
 
-const fullProductURL = apiBase + woocommerceBase + productBase;
+const fullProductURL = corsFix + apiBase + woocommerceBase + productBase;
 
 async function getProducts(featuredOnly) {
   let url = fullProductURL;
