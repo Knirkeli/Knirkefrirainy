@@ -29,7 +29,8 @@ searchInput.addEventListener("input", (e) => {
 
 /* api */
 
-const apiBase = "https://noroffcors.onrender.com/https://knirkefridesign.no/";
+const apiBase =
+  "https://noroffcors.onrender.com/https://knirkefridesign.no/blogtroll";
 const woocommerceBase = "/wp-json/wc/store";
 const productBase = "/products";
 
