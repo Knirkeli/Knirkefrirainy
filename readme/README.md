@@ -7,41 +7,12 @@ figma prototype: https://www.figma.com/proto/VP87lebSOdSqFsa72TVvn8/Rainyday?pag
 
 Netlify: rainydz.netlify.app
 
-## Description
+Rainy Days is a webshop for a fictional company created as a cross-course project. It was built using HTML, CSS, JS and PHP and uses the WooCommerce API to fetch data.
 
-This is my design for the Rainy days
-I have followd my design, but have made some changes to accomodate screen sizes and better contrast.
+The brief for the project was to create a webshop using JS for the first time. Check it out to see what we came up with!
 
-## Getting Started
-
-### Dependencies
-
-- Describe any prerequisites, libraries, OS version, etc., needed before installing the program.
-- ex. Windows 10
-
-### Installing
-
-- How/where to download your program
-- Any modifications needed to be made to files/folders
-
-### Executing program
-
-- hosted link
-
-OR
-
-- How to run the program
-- Step-by-step bullets
-
-code blocks for commands
-
-## Help
-
-Any advice for common problems or issues.
-
-- command to run if the program contains helper info
-
-## Authors
-
-Eirik Kirkeli knirkeli88@msn.com
+## Contact Information
+- GitHub: https://github.com/Knirkeli
+- Email: knirkeli88@msn.com
+- Website: https://knirkefridesign.com
 
