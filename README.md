@@ -7,7 +7,7 @@
 
 Rainy Days is a webshop for a fictional company created as a cross-course project. It was built using HTML, CSS, JS and PHP and uses the WooCommerce API to fetch data.
 
-The brief for the project was to create a webshop using JS for the first time. Check it out to see what we came up with!
+The brief for the project was to create a webshop using JS for the first time. Check it out to see what I came up with!
 
 ## Built With
 
