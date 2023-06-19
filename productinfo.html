@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="our autumn collection of high quality rain jackets"
+    />
+    <title>Rainy Days | autumn</title>
+    <script
+      src="https://kit.fontawesome.com/6bd7a8590b.js"
+      crossorigin="anonymous"
+    ></script>
+    <link href="/css/styles.css" rel="stylesheet" />
+    <!-- Hotjar Tracking Code for my site -->
+    <script>
+      (function (h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function () {
+            (h.hj.q = h.hj.q || []).push(arguments);
+          };
+        h._hjSettings = { hjid: 3413192, hjsv: 6 };
+        a = o.getElementsByTagName("head")[0];
+        r = o.createElement("script");
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
+    </script>
+    <script defer src="js/script.js" type="module"></script>
+    <script defer src="js/product.js" type="module"></script>
+    <!-- <script defer src="js/index.js" type="module"></script> -->
+  </head>
+  <body>
+    <header>
+      <div class="on_sale flex_top">
+        <a
+          href="sale.html"
+          alt="Products on sale"
+          class="sale_button cta_button"
+        >
+          Sale</a
+        >
+      </div>
+      <div class="home_button">
+        <a href="index.html">
+          <img
+            src="../images/RainyDays_Logo.png"
+            alt="Rainy days logo. Home"
+            class="logo"
+          />
+        </a>
+      </div>
+      <div class="cart_button flex_top">
+        <a
+          href="checkout.html"
+          aria-label="Your cart"
+          class="checkout_button cta_button"
+        >
+          <i class="fa-solid fa-cart-shopping cart"></i>
+        </a>
+      </div>
+    </header>
+    <section class="search_section" label="searchbar">
+      <form action="post">
+        <input
+          type="search"
+          placeholder="Search"
+          id="search"
+          name="Search"
+          aria="Search our products"
+          label="Searchbar"
+          class="search Searchbar"
+          product-search-field
+        />
+        <button aria-label="search" type="submit" class="search_icon">
+          <i class="fa-solid fa-magnifying-glass" label="searchbar"></i>
+        </button>
+      </form>
+      <div class="search_results_section" product-search-container></div>
+      <template search-display-tempelate>
+        <div open class="search_pop">
+          <a class="search_link">
+            <div class="popout_search_result">
+              <div class="search_img_container" search-img>
+                <img class="search_img" search-img alt="" />
+              </div>
+              <h2 class="search_header" search-header></h2>
+
+              <div class="search_price" search-price></div>
+            </div>
+          </a>
+        </div>
+      </template>
+    </section>
+
+    <label class="featured">
+      <input type="checkbox" id="featured-only" />
+      Show featured products
+    </label>
+    <main class="products_display">
+      <div class="new-container"></div>
+    </main>
+
+    <footer>
+      <container class="footer_container">
+        <a
+          href="about.html"
+          alt="about us"
+          class="about_button cta_button footer_button"
+          >About</a
+        >
+        <a
+          href="return.html"
+          alt="return product"
+          class="return_button cta_button footer_button"
+          >Return</a
+        >
+        <a
+          href="contact.html"
+          alt="contact us"
+          class="contact_button cta_button footer_button"
+          >Contact</a
+        >
+      </container>
+    </footer>
+    <p class="copy">Copyright: Knirkefri Design &reg;</p>
+  </body>
+</html>

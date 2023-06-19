@@ -29,6 +29,7 @@
         a.appendChild(r);
       })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
     </script>
+    <script defer src="js/script.js" type="module"></script>
   </head>
   <body>
     <header>
@@ -60,23 +61,41 @@
         </a>
       </div>
     </header>
-    <section class="search_section">
-      <form action="/hostvaer.html">
+    <section class="search_section" label="searchbar">
+      <form action="post">
         <input
-          type="text"
+          type="search"
           placeholder="Search"
+          id="search"
           name="Search"
-          alt="Search our products"
+          aria="Search our products"
+          label="Searchbar"
           class="search Searchbar"
+          product-search-field
         />
-        <button aria-label="søk" type="submit" class="search_icon">
-          <i class="fa-solid fa-magnifying-glass"></i>
+        <button aria-label="search" type="submit" class="search_icon">
+          <i class="fa-solid fa-magnifying-glass" label="searchbar"></i>
         </button>
       </form>
+      <div class="search_results_section" product-search-container></div>
+      <template search-display-tempelate>
+        <div open class="search_pop">
+          <a class="search_link">
+            <div class="popout_search_result">
+              <div class="search_img_container" search-img>
+                <img class="search_img" search-img alt="" />
+              </div>
+              <h2 class="search_header" search-header></h2>
+
+              <div class="search_price" search-price></div>
+            </div>
+          </a>
+        </div>
+      </template>
     </section>
 
     <main class="product product_page hostvaer">
-      <h1 class="product_page_heading">Høstvær jacket</h1>
+      <h1 class="product_page_heading">Paere jacket</h1>
       <section class="product_page_description">
         <p>2995</p>
         <p>
@@ -88,7 +107,7 @@
       </section>
       <section class="product_page_image">
         <img
-          src="../images/Blue jacket woman.jpeg"
+          src="./images/paere.jpeg"
           alt="woman wearing a blue jacket"
           class="product on_sale product_picture woman"
         />
