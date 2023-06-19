@@ -40,7 +40,7 @@ Open the project in your prefered code editor
 
 ## Contributing
 
-I would like suggestions to be made by contacting me in one of the chanels listed below
+I would like suggestions to be made by contacting me in one of the chanels listed below.
 
 ## Contact
 
