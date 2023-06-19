@@ -66,4 +66,4 @@ I would like suggestions to be made by contacting me in one of the chanels liste
 - Email: knirkeli88@msn.com
 - https://www.facebook.com/Knirkeli
 - https://www.instagram.com/pappapaatur/
-- Website: https://knirkefridesign.com
+- Website: https://knirkefridesign.netlify.app/
